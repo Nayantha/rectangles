@@ -9,9 +9,9 @@ impl Rectangle {
         self.width * self.height
     }
     fn can_hold(&self, rect: &Rectangle) -> bool {
-        self.area() > rect.area() && (
-            (self.width > rect.width && self.height > rect.height) ||
-                (self.width > rect.height && self.height > rect.width)
+        self.area() >= rect.area() && (
+            (self.width >= rect.width && self.height >= rect.height) ||
+                (self.width >= rect.height && self.height >= rect.width)
         )
     }
 }
