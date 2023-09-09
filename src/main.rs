@@ -1,5 +1,3 @@
-use std::ffi::c_short;
-
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
