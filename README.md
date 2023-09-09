@@ -3,6 +3,8 @@ Rectangle is used to Demonstrate
 <br>
 * **Define Struct** <br>
   #[derive(Debug)] can be used to easily print struct on the output / CMD.
+<br>{:?} - list all the values in single line
+<br>{:#?} - format the struct (similar to json format)
 ```rust
 struct Rectangle {
 width: u32, // fields
