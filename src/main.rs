@@ -14,6 +14,9 @@ impl Rectangle {
                 (self.width >= rect.height && self.height >= rect.width)
         )
     }
+    fn make_square(size: u32) -> Rectangle{
+        Rectangle{width: size, height: size}
+    }
 }
 fn main() {
     let width1 = 30;
