@@ -1,7 +1,7 @@
 # Struct in Rust
 Rectangle is used to Demonstrate
 <br>
-* **Define Struct** <br>
+## **Define Struct** <br>
   #[derive(Debug)] can be used to easily print struct on the output / CMD.
 <br>{:?} - list all the values in single line
 <br>{:#?} - format the struct (similar to json format)
@@ -12,7 +12,7 @@ height: u32,
 }
 ```
 
-* **Implement Methods**
+## **Implement Methods**
   <br>
 
 ```rust
@@ -32,7 +32,7 @@ impl Rectangle {
   }
 ```
 
-* **Struct Tips**
+## **Struct Tips**
 <br>**Struct Construct**
 <br>Normal
 ```rust
