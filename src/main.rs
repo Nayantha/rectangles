@@ -7,7 +7,7 @@ fn main() {
     let width1 = 30;
     let height1 = 50;
     let rect1 = Rectangle{ width: width1,  height: height1, };
-    println!("{:?}", rect1);
+    println!("{:#?}", rect1);
     println!("The area of the rectangle is {} square pixels.", area(&rect1));
 }
 
