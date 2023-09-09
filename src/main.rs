@@ -16,7 +16,7 @@ impl Rectangle {
                 (self.width > rect.height && self.height > rect.width )
         )
         {
-            true
+            return true;
         }
         false
     }
