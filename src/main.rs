@@ -5,18 +5,14 @@ struct Rectangle {
 }
 
 impl Rectangle {
-    fn area(&self) -> u32{
+    fn area(&self) -> u32 {
         self.width * self.height
     }
-    fn can_hold(&self, rect: &Rectangle)-> bool{
-        if self.area() > rect.area() && (
-                (self.width > rect.width && self.height > rect.height ) ||
-                (self.width > rect.height && self.height > rect.width )
+    fn can_hold(&self, rect: &Rectangle) -> bool {
+        self.area() > rect.area() && (
+            (self.width > rect.width && self.height > rect.height) ||
+                (self.width > rect.height && self.height > rect.width)
         )
-        {
-            return true;
-        }
-        false
     }
 }
 fn main() {
