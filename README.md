@@ -31,3 +31,28 @@ impl Rectangle {
   }
   }
 ```
+
+* **Struct Tips**
+<br>**Struct Construct**
+<br>Normal
+```rust
+fn build_user(email: String, username: String) -> User {
+  User {
+    email: email,
+    username: username,
+    active: true,
+    sign_in_count: 1,
+  }
+}
+```
+<br>Simple & Fast Way
+```rust
+fn build_user(email: String, username: String) -> User {
+  User {
+    email,
+    username,
+    active: true,
+    sign_in_count: 1,
+  }
+}
+```
