@@ -1,3 +1,5 @@
+use std::ffi::c_short;
+
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -7,6 +9,16 @@ struct Rectangle {
 impl Rectangle {
     fn area(&self) -> u32{
         self.width * self.height
+    }
+    fn can_hold(&self, rect: &Rectangle)-> bool{
+        if self.area() > rect.area() && (
+                (self.width > rect.width && self.height > rect.height ) ||
+                (self.width > rect.height && self.height > rect.width )
+        )
+        {
+            true
+        }
+        false
     }
 }
 fn main() {
