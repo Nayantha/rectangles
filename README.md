@@ -1,3 +1,10 @@
+---
+title: Struct in Rust
+slug: struct-in-rust
+excerpt: Explain the struct in Rust. Rectangle is used to demonstrate the behaviour of the struct.
+date: 09.10.23
+author: Nayantha Yasiru
+---
 # Struct in Rust
 Rectangle is used to Demonstrate
 <br>
