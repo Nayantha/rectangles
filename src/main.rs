@@ -11,7 +11,7 @@ impl Rectangle {
     fn can_hold(&self, rect: &Rectangle) -> bool {
         self.area() >= rect.area()
             && ((self.width >= rect.width && self.height >= rect.height)
-                || (self.width >= rect.height && self.height >= rect.width))
+            || (self.width >= rect.height && self.height >= rect.width))
     }
     fn make_square(size: u32) -> Rectangle {
         Rectangle {
@@ -20,6 +20,7 @@ impl Rectangle {
         }
     }
 }
+
 fn main() {
     let width1 = 30;
     let height1 = 50;
